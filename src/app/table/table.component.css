@@ -1,0 +1,15 @@
+.divCell {
+  display: inline-block;
+  border-style: solid;
+  border-width: thin;
+  border-color: brown;
+  width: 100px;
+}
+
+.divRow {
+  margin-bottom: 60px;
+}
+
+.divHeader {
+  margin-bottom: 60px;
+}

@@ -1,0 +1,22 @@
+<p>table works!</p>
+
+<div>
+  edit visible rows
+</div>
+<div>
+  <div class="divTable">
+    <div class="divHeader">
+      <span *ngFor="let item of tableHeader">
+        <span class="divCell" *ngIf="item.isVisible">{{item.screenName}}</span>
+      </span>
+    </div>
+    <div class="divBody">
+      <div class="divRow" *ngFor="let row of rows">
+        <span *ngFor="let rowItem of row.rowItems">
+          <span class="divCell" *ngIf="rowItem.headerItem.isVisible">{{rowItem.value}}</span>
+        </span>
+      </div>
+      <div class="divFooter"></div>
+    </div>
+  </div>
+</div>
